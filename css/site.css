@@ -1,0 +1,828 @@
+﻿html, body
+{
+    width: 100%;
+    height: 100%;
+    font-family: 'Dosis', 'Segoe UI', Tahoma, Arial, Helvetica, Sans-Serif;
+}
+
+.navigation
+{
+    position: fixed;
+    z-index: 10;
+    top: 40px;
+    padding-left: 10%;
+    background-color: #1d1d1d;
+    width: 70%;
+    min-width: 600px;
+    box-shadow: 3px 3px 5px #333;
+    left: -10px;
+}
+
+    .navigation li
+    {
+        color: #009ddc;
+        width: 75px;
+        float: left;
+        cursor: pointer;
+        font-size: 22px;
+        text-align: center;
+        padding: 7px 20px 7px 20px;
+    }
+
+        .navigation li:hover
+        {
+            background-color: #C6C5B9;
+        }
+
+        .navigation li.active
+        {
+            background-color: #E9E9E2;
+            cursor: default;
+        }
+
+.slide
+{
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 768px; /* design for this */
+    position: relative;
+    box-shadow: inset 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+.wrapper
+{
+    width: 980px; /* design for this */
+    margin: auto;
+    padding-top: 120px;
+    position: relative;
+    text-align: center;
+}
+
+.slideno
+{
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    font-size: 80px;
+    color: rgba(255,255,255,0.3);
+}
+
+    .slideno.dark
+    {
+        color: rgba(163, 162, 145, 0.3);
+    }
+
+.slide a.button
+{
+    display: block;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    background-color: transparent;
+    background-image: url("../images/arrowHover.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.button:hover
+{
+    cursor: pointer;
+    background-image: url("../images/arrow.png");
+}
+
+/******************************
+ HOME 
+*******************************/
+.homeSlide
+{
+    background-color: #FFFFFF;
+}
+
+    .homeSlide .wrapper
+    {
+        padding-top: 20%;
+    }
+
+    .homeSlide .motto
+    {
+        margin-top: 2%;
+        font-size: 48px;
+    }
+/******************************
+ ABOUT 
+*******************************/
+.aboutSlide
+{
+    background-color: #A3A291;
+}
+    .aboutSlide .wrapper
+    {
+        text-align: left;
+        font-size: 36px;
+    }
+
+/******************************
+ PORTFOLIO 
+*******************************/
+.portfolioSlide
+{
+    background-color: #009DDC;
+}
+
+    .portfolioSlide .product
+    {
+        position: relative;
+        width: 410px;
+        min-width: 200px;
+        max-width: 550px;
+        height: 155px;
+        display: inline-block;
+        text-align: left;
+        background-color: #E9E9E2;
+        margin: auto 25px 25px auto;
+        padding: 10px;
+    }
+
+        .portfolioSlide .product h3
+        {
+            position: absolute;
+            z-index: 2;
+            font-size: 24px;
+            outline: none;
+        }
+
+        .portfolioSlide .product .productContent
+        {
+            position: absolute;
+            top: 41px;
+            z-index: 2;
+        }
+
+        .portfolioSlide .product img
+        {
+            position: absolute;
+            bottom: 10px;
+            max-height: 52px;
+        }
+
+        .portfolioSlide .product .links
+        {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            text-align: right;
+        }
+            .portfolioSlide .product .links a
+            {
+                display: block;
+            }
+/******************************
+ TALENT
+*******************************/
+.talentSlide
+{
+    background-color: #A3A291;
+}
+
+    .talentSlide .wrapper
+    {
+        min-width: 980px;
+        width: auto;
+    }
+
+    .talentSlide .bio
+    {
+        position: relative;
+        display: inline-block;
+        width: 304px;
+        height: 540px;
+        background-color: #D9D8D0;
+        margin-right: 30px;
+    }
+
+        .talentSlide .bio:last-child
+        {
+            margin-right: 0px;
+        }
+
+        .talentSlide .bio h3
+        {
+            text-align: left;
+            margin: 10px 0px 0px 10px;
+            font-size: 24px;
+        }
+
+        .talentSlide .bio p.summary
+        {
+            text-align: left;
+            max-height: 340px;
+            overflow: hidden;
+            margin: 0px 10px 0px 10px;
+            position: absolute;
+        }
+
+        .talentSlide .bio img
+        {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .talentSlide .bio .stats
+        {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            text-align: left;
+        }
+
+            .talentSlide .bio .stats p
+            {
+            }
+
+            .talentSlide .bio .stats .label
+            {
+            }
+
+            .talentSlide .bio .stats .value
+            {
+                font-style: italic;
+            }
+/******************************
+ CONTACT
+*******************************/
+.contactSlide
+{
+    background-color: #E9E9E2;
+}
+
+    .contactSlide .wrapper
+    {
+        padding-top: 170px;
+    }
+
+    .contactSlide a, .contactSlide a:visited, .contactSlide a:hover
+    {
+        color: #E9E9E2;
+        border-width: 0px;
+    }
+
+    .contactSlide div
+    {
+        margin-bottom: 50px;
+        position: relative;
+        text-align: left;
+    }
+
+        .contactSlide div img
+        {
+            max-height: 57px;
+            margin-right: 15px;
+            margin-left: 190px;
+        }
+
+        .contactSlide div span
+        {
+            font-size: 34px;
+            display: inline-block;
+            vertical-align: top;
+            color: #009DDC;
+            position: absolute;
+            left: 300px;
+        }
+        .contactSlide div img.twitter
+        {
+            margin-left: 185px;
+        }
+        .contactSlide div img.mail
+        {
+            margin-left: 180px;
+        }
+
+.blogSlide
+{
+    
+}
+    .blogSlide .wrapper
+    {
+        text-align: left;
+    }
+    .blogSlide h1
+    {
+        font-size: 28px;
+        padding-left: 10px;
+    }
+    .blogSlide div
+    {
+        margin-bottom: 40px;
+    }
+
+
+#debug
+{
+    display: none;
+    position: absolute;
+    top: 0px;
+}
+
+/* ABPS: http://css-tricks.com/snippets/css/media-queries-for-standard-devices/ */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (min-width : 320px) and (max-width : 480px),
+    screen and (min-width : 768px) and (max-width : 1024px) and (-webkit-min-device-pixel-ratio : 2),
+    screen and (min-width : 768px) and (max-width : 1024px)and (min-device-pixel-ratio : 2)
+{
+    .wrapper
+    {
+        width: 97%;
+    }
+
+    .navigation
+    {
+        display: none;
+    }
+
+    .slideno
+    {
+        top: 2px;
+        right: 2px;
+        font-size: 16px;
+    }
+
+    #debug
+    {
+        display: none;
+    }
+
+    .hide-phone {
+        display: none;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media screen and (min-width : 321px) and (max-width : 480px),
+    screen and (min-width : 768px) and (max-width : 1024px) and (-webkit-min-device-pixel-ratio : 2) and (orientation : landscape),
+    screen and (min-width : 768px) and (max-width : 1024px) and (min-device-pixel-ratio : 2) and (orientation : landscape)
+{
+    .hide-phone-landscape {
+        display: none;
+    }
+
+    #debug
+    {
+        position: absolute;
+        top: 0px;
+        display: none;
+    }
+
+    .slide
+    {
+        min-height: 260px;
+    }
+
+    .wrapper
+    {
+        padding-top: 28px;
+    }
+
+    .homeSlide .wrapper
+    {
+        padding-top: 40px;
+    }
+    .homeSlide img
+    {
+        max-width: 100%;
+        top: 0px;
+    }
+    .homeSlide .motto
+    {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .aboutSlide .wrapper
+    {
+        font-size: 14px;
+    }
+
+    .portfolioSlide .product
+    {
+        height: 12px;
+        margin-bottom: 0px;
+    }
+        .portfolioSlide .product h3
+        {
+            top: 0px;
+            font-size: 14px;
+        }
+        .portfolioSlide .product .productContent
+        {
+            font-size: 10px;
+            top: 16px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 96%;
+        }
+        .portfolioSlide .product img
+        {
+            display: none;
+        }
+        .portfolioSlide .product a
+        {
+            top: 0px;
+            font-size: 10px;
+        }
+
+    .talentSlide .wrapper
+    {
+        min-width: 321px;
+        padding-top: 17px;
+    }
+    .talentSlide .bio
+    {
+        width: 98%;
+        height: 60px;
+        margin: 5px;
+    }
+        .talentSlide .bio h3
+        {
+            text-align: left;
+            margin: 0px 0px 0px 2px;
+            font-size: 14px;
+        }
+        .talentSlide .bio p.summary
+        {
+            max-height: 40px;
+            overflow: hidden;
+            margin: 0px 2px 0px 2px;
+            max-width: 90%;
+            font-size: 10px;
+        }
+        .talentSlide .bio img
+        {
+            max-height: 40px;
+        }
+        .talentSlide .bio .stats
+        {
+            display: none;
+        }
+
+    .contactSlide .slideno
+    {
+        color: #A3A291;
+    }
+    .contactSlide .wrapper
+    {
+        padding-top: 27px;
+    }
+    .contactSlide div
+    {
+        margin-bottom: 30px;
+    }
+        .contactSlide div img
+        {
+            max-height: 40px;
+            margin-right: 10px;
+            margin-left: 50px;
+        }
+        .contactSlide div span
+        {
+            font-size: 20px;
+            left: 120px;
+        }
+        .contactSlide div img.twitter
+        {
+            margin-left: 48px;
+        }
+        .contactSlide div img.mail
+        {
+            margin-left: 46px;
+        }
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media screen and (max-width : 320px),
+    screen and (min-width : 768px) and (max-width : 1024px) and (-webkit-min-device-pixel-ratio : 2) and (orientation : portrait),
+    screen and (min-width : 768px) and (max-width : 1024px) and (min-device-pixel-ratio : 2) and (orientation : portrait)
+{
+    .hide-phone-portrait {
+        display: none;
+    }
+
+    .slide
+    {
+        min-height: 480px;
+    }
+
+    .wrapper
+    {
+        padding-top: 32px;
+        width: 310px;
+    }
+
+    .homeSlide img
+    {
+        max-width: 100%;
+        bottom: 23px;
+    }
+
+    .homeSlide .motto
+    {
+        margin-top: 60px;
+        font-size: 24px;
+    }
+
+    .aboutSlide .wrapper
+    {
+        font-size: 16px;
+    }
+
+    .portfolioSlide .product
+    {
+        padding: 5px;
+        margin: 0px 0px 3px 0px;
+        width: 300px; /* wrapper width - this.padding x 2 */
+        height: 60px;
+    }
+        .portfolioSlide .product h3
+        {
+            font-size: 14px;
+        }
+        .portfolioSlide .product .productContent
+        {
+            top: 28px;
+            font-size: 11px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: 90%;
+        }
+        .portfolioSlide .product img
+        {
+            bottom: 5px;
+            max-height: 16px;
+        }
+        .portfolioSlide .product a
+        {
+            bottom: 5px;
+            right: 5px;
+            font-size: 11px;
+        }
+
+    .talentSlide .wrapper
+    {
+        min-width: 321px;
+        padding-top: 20px;
+    }
+    .talentSlide .bio
+    {
+        width: 98%;
+        height: 120px;
+        margin: 5px;
+    }
+        .talentSlide .bio h3
+        {
+            text-align: left;
+            margin: 0px 0px 2px 2px;
+            font-size: 14px;
+        }
+        .talentSlide .bio p.summary
+        {
+            max-height: 70px;
+            margin: 0px 2px 0px 2px;
+            max-width: 85%;
+            font-size: 10px;
+        }
+        .talentSlide .bio img
+        {
+            max-height: 56px;
+        }
+        .talentSlide .bio .stats
+        {
+            display: none;
+        }
+
+    .contactSlide .slideno
+    {
+        color: #A3A291;
+    }
+    .contactSlide .wrapper
+    {
+        padding-top: 80px;
+    }
+    .contactSlide div
+    {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+        .contactSlide div img
+        {
+            max-height: 48px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .contactSlide div span
+        {
+            font-size: 16px;
+            display: block;
+            vertical-align: middle;
+            position: relative;
+            left: 0px;
+        }
+        .contactSlide div img.twitter
+        {
+            margin-left: auto;
+        }
+        .contactSlide div img.mail
+        {
+            margin-left: auto;
+        }
+}
+
+/* iPads (landscape) ----------- */
+@media screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape)
+{
+    .hide-ipad,
+    .hide-ipad-landscape {
+        display: none;
+    }
+
+    .slide
+    {
+        min-height: 644px;
+    }
+
+    .wrapper
+    {
+        width: 95%;
+    }
+
+    .aboutSlide .wrapper
+    {
+        font-size: 28px;
+    }
+
+    .portfolioSlide .product
+    {
+        height: 115px;
+    }
+
+        .portfolioSlide .product h3
+        {
+            font-size: 20px;
+        }
+
+        .portfolioSlide .product .productContent
+        {
+            top: 35px;
+            font-size: 14px;
+        }
+
+        .portfolioSlide .product img
+        {
+            max-height: 32px;
+        }
+
+    .talentSlide .bio
+    {
+        height: 421px;
+    }
+
+        .talentSlide .bio h3
+        {
+            font-size: 18px;
+        }
+
+        .talentSlide .bio p.summary
+        {
+            font-size: 14px;
+            max-height: 270px;
+        }
+
+        .talentSlide .bio img
+        {
+            max-height: 89px;
+        }
+}
+
+/* iPads (portrait) ----------- */
+@media screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait)
+{
+    .hide-ipad,
+    .hide-ipad-portrait {
+        display: none;
+    }
+
+    .slide
+    {
+        min-height: 100%;
+    }
+
+    .wrapper
+    {
+        width: 95%;
+    }
+
+    .homeSlide .wrapper
+    {
+        padding-top: 35%;
+    }
+
+    .homeSlide img
+    {
+        max-width: 100%;
+    }
+
+    .aboutSlide .wrapper
+    {
+        font-size: 30px;
+    }
+
+    .portfolioSlide .product
+    {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+        .portfolioSlide .product img
+        {
+            bottom: 23px;
+        }
+
+        .portfolioSlide .product .productContent
+        {
+            margin-left: 60px;
+        }
+
+    .talentSlide .wrapper
+    {
+        padding-top: 100px;
+        min-width: 730px;
+    }
+
+    .talentSlide .bio
+    {
+        display: block;
+        width: 700px;
+        height: 215px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+        .talentSlide .bio:last-child
+        {
+            margin-right: auto;
+        }
+
+        .talentSlide .bio h3
+        {
+        }
+
+        .talentSlide .bio p.summary
+        {
+            max-height: 120px;
+            margin-right: 73px;
+            font-size: 14px;
+        }
+
+        .talentSlide .bio img
+        {
+            max-height: 89px;
+        }
+
+        .talentSlide .bio .stats
+        {
+            display: none;
+        }
+
+    .contactSlide div img
+    {
+        margin-left: 98px;
+    }
+        .contactSlide div span
+        {
+            left: 220px;
+        }
+        .contactSlide div img.twitter
+        {
+            margin-left: 94px;
+        }
+        .contactSlide div img.mail
+        {
+            margin-left: 89px;
+        }
+}
+
+/* Desktops and laptops ----------- */
+@media screen and (min-width : 1024px)
+{
+    .slide
+    {
+        height: 100%;
+    }
+}
