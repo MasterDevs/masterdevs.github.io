@@ -226,41 +226,36 @@
 
     .contactSlide .wrapper {
         padding-top: 170px;
+        margin-left:auto;
+        padding-left:200px;
     }
 
     .contactSlide a, .contactSlide a:visited, .contactSlide a:hover {
-        color: #E9E9E2;
-        border-width: 0px;
+        border-width: 0;
+        text-decoration:none;
+        display: inline-block;
+        vertical-align: top;
+        margin-left:15px
     }
 
     .contactSlide div {
-        margin-bottom: 50px;
+        font-size: 34px;
+        margin-bottom: 40px;
         position: relative;
         text-align: left;
     }
 
-        .contactSlide div img {
-            max-height: 57px;
-            margin-right: 15px;
-            margin-left: 190px;
-        }
-
-        .contactSlide div span {
-            font-size: 34px;
-            display: inline-block;
-            vertical-align: top;
-            color: #009DDC;
-            position: absolute;
-            left: 300px;
-        }
-
-        .contactSlide div img.twitter {
-            margin-left: 185px;
-        }
-
-        .contactSlide div img.mail {
-            margin-left: 180px;
-        }
+    .contactSlide i {
+        color:#1d1d1d;
+        font-size:64px;
+        margin-right:50px;
+    }
+    
+    .contactSlide div span {
+        color: #009DDC;
+        text-align:center;
+        vertical-align:middle;
+    }
 
 .blogSlide {
 }
@@ -417,30 +412,24 @@
 
     .contactSlide .wrapper {
         padding-top: 27px;
+        padding-left:8px;
     }
 
     .contactSlide div {
         margin-bottom: 30px;
+        font-size: 18px;
     }
 
-        .contactSlide div img {
-            max-height: 40px;
-            margin-right: 10px;
-            margin-left: 50px;
-        }
+    .contactSlide div i {
+        font-size: 24px;
+        margin-right:12px;
+    }
 
-        .contactSlide div span {
-            font-size: 20px;
-            left: 120px;
-        }
-
-        .contactSlide div img.twitter {
-            margin-left: 48px;
-        }
-
-        .contactSlide div img.mail {
-            margin-left: 46px;
-        }
+    .contactSlide div span {
+        font-size: 18px;
+        display: block;
+        vertical-align: middle;
+    }
 }
 
 /* Smartphones (portrait) ----------- */
@@ -541,6 +530,7 @@
 
     .contactSlide .wrapper {
         padding-top: 80px;
+        padding-left: 8px;
     }
 
     .contactSlide div {
@@ -548,27 +538,16 @@
         text-align: center;
     }
 
-        .contactSlide div img {
-            max-height: 48px;
-            margin-right: auto;
-            margin-left: auto;
-        }
+    .contactSlide div i {
+        font-size: 24px;
+        margin-right:12px;
+    }
 
-        .contactSlide div span {
-            font-size: 16px;
-            display: block;
-            vertical-align: middle;
-            position: relative;
-            left: 0px;
-        }
-
-        .contactSlide div img.twitter {
-            margin-left: auto;
-        }
-
-        .contactSlide div img.mail {
-            margin-left: auto;
-        }
+    .contactSlide div span {
+        font-size: 18px;
+        display: block;
+        vertical-align: middle;
+    }
 }
 
 /* iPads (landscape) ----------- */
@@ -699,22 +678,6 @@
         .talentSlide .bio .stats {
             display: none;
         }
-
-    .contactSlide div img {
-        margin-left: 98px;
-    }
-
-    .contactSlide div span {
-        left: 220px;
-    }
-
-    .contactSlide div img.twitter {
-        margin-left: 94px;
-    }
-
-    .contactSlide div img.mail {
-        margin-left: 89px;
-    }
 }
 
 /* Desktops and laptops ----------- */
